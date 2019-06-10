@@ -1,0 +1,26 @@
+body {
+	background-color: #4db2ff;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: 1px 1px 1px black;
+}
+
+table {
+	border: none;
+	margin: auto;
+}
+
+tr, td {
+	border: 3px solid black;
+	border-radius: 500px;
+	padding: 20px;
+}
+
+li{
+	list-style-position: inside;
+}
+.box {
+	text-align: justify;
+	float: left;
+	width: 50%;
+}

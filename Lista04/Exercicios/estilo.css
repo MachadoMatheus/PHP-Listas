@@ -1,0 +1,17 @@
+body {
+	background-color: #4db2ff;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: 1px 1px 1px black;
+}
+
+table {
+	border: 0px;
+	margin: auto;
+}
+
+tr, td {
+	border: 5px solid black;
+	border-radius: 500px;
+	padding: 20px;
+}
