@@ -1,0 +1,39 @@
+body {
+	background-color: #47BCFF;
+	text-align: center;
+}
+
+button {
+	background-color: #EEF1FC;
+ 	border: none;
+ 	color: #C22900;
+ 	padding: 20px;
+ 	font-size: 16px;
+ 	cursor: pointer;
+ 	float: left;
+ 	width: 20%;
+}
+
+button:hover {
+	background-color: #C22900;
+	color: #EEF1FC;
+	text-decoration: underline;
+  	text-shadow: 1px 1px 5px #092FC6;
+}
+
+.botoes {
+	width: 70%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.cabecalho {
+	margin: auto;
+	font-size: 99px;
+	width: 90%;
+	color: #EEF1FC;
+	background-color: #0051F7;
+	height: 200px;
+	box-shadow: 10px 10px 10px #092FC6;
+	text-shadow: 5px 5px 5px #092FC6;
+}
