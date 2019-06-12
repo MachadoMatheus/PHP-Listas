@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Exercício 2</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css?version=13">
+</head>
+<body>
+<!--2) Escreva um programa/crie uma página para receber, através de um
+formulário HTML, e gravar em um arquivo texto, as seguintes
+informações de usuários.
+- Nome
+- Sobrenome
+- Senha
+- Gênero
+- Idade
+- Preferências de lazer (com as possíveis opções)
+- Viagem
+- Mergulho
+- Navegação na Internet
+- Videogame
+- Ciclismo
+- Atletismo
+- Pesca-->
+	<div class="fundoForm">
+
+		<h1>Formulário PHP</h1>
+
+		<b>OBS.:Não deixe nada em branco</b><br><br>
+		<form method="POST" action="exercicio2.php">
+			<label for="nome">Nome</label>	<br>
+			<input type="text" id="nome" name="nome" size="20" placeholder="Digite o seu nome..">	<br>	
+			<label for="sobrenome">Sobrenome</label>	<br>
+			<input type="text" id="sobrenome" name="sobrenome"	size="20" placeholder="Digite o seu sobrenome..">	<br>
+			<label for="senha">Senha</label>	<br>
+			<input type="password" id="senha" name="senha" placeholder="Digite a sua senha..">	<br>
+			<label for="genero">Gênero</label>	<br>
+			<input type="text" id="genero" name="genero" placeholder="Informe o seu gênero">	<br>
+			<label for="idade">Idade</label>	<br>
+			<input type="number" id="idade" name="idade" placeholder="Informe a sua idade">	<br>
+			<label for="preferencias">Preferências de Lazer</label>	<br>
+			<input type="number" id="idade" name="idade" placeholder="Informe a sua idade">	<br>
+
+			<input type="submit" name="Enviar">
+		</form>
+	</div>
+</body>
+</html>
