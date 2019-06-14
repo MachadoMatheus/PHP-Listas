@@ -1,0 +1,38 @@
+body {
+  background-color: #90cfff;
+  text-align: center;
+}
+ul, li{
+  padding: 4px;
+  text-align: justify;
+  font-size: 25px;
+}
+a:link {
+  color: #194e77;
+  text-decoration: none;
+}
+a:visited {
+  color: #206aa0;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.fundoLista {
+  width: 280px;
+  height: 400px;
+  position: relative;
+  left: 30px  
+}
+.cabecalho {
+  margin: auto;
+  width: 700px;
+}
+.lista {
+  height: 480px;
+  width: 700px;
+  margin: auto;
+  background-color: #6cbfff;
+  box-shadow: 0px 0px 5px;
+}

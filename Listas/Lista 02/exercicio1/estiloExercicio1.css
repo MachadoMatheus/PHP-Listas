@@ -1,0 +1,19 @@
+body {
+  font-family: verdana;
+  text-align: center;
+  text-shadow: 0px 0px 1px;
+}
+
+h1 {
+  color: blue;
+  font-size: 50px
+}
+
+.linhaMaior {
+	color: black;
+	font-size: 80px;
+}
+
+.linhaMenor {
+	color: tomato;
+}

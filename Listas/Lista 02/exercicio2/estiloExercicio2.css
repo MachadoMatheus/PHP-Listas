@@ -1,0 +1,27 @@
+body {
+ 	font-family: verdana;
+ 	text-align: center;
+ 	background-color: #90cfff;
+}
+table {
+  	margin: auto;
+  	margin-top: 50px;
+	border-collapse: collapse;
+	border: 3px solid black;
+	font-size: 30px;
+	box-shadow: 0px 0px 5px;
+	background-color: white;
+}
+td {
+	padding: 15px;
+	border-collapse: collapse;
+	border: 3px solid black;
+}
+.item:hover {
+	background-color: #6cbfff;
+}
+.cabecalho {
+	background-color: #35a7ff;
+	border-collapse: collapse;
+	font-weight: bold;
+}

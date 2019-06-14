@@ -24,7 +24,7 @@ informações de usuários.
 - Pesca-->
 	<div class="fundoForm">
 
-		<h1>Formulário PHP</h1>
+		<b style="font-size: 30px;">Formulário PHP</b><br>
 
 		<b>OBS.:Não deixe nada em branco</b><br><br>
 		<form method="POST" action="exercicio2.php">
@@ -38,8 +38,14 @@ informações de usuários.
 			<input type="text" id="genero" name="genero" placeholder="Informe o seu gênero">	<br>
 			<label for="idade">Idade</label>	<br>
 			<input type="number" id="idade" name="idade" placeholder="Informe a sua idade">	<br>
-			<label for="preferencias">Preferências de Lazer</label>	<br>
-			<input type="number" id="idade" name="idade" placeholder="Informe a sua idade">	<br>
+			Preferências de Lazer	<br>
+			<input type="checkbox" name="preferencias[]" value="Viagem"> Viagem	<br>
+			<input type="checkbox" name="preferencias[]" value="Mergulho"> Mergulho	<br>
+			<input type="checkbox" name="preferencias[]" value="Navegacao"> Navegação na Internet	<br>
+			<input type="checkbox" name="preferencias[]" value="Games"> Videogame	<br>
+			<input type="checkbox" name="preferencias[]" value="Ciclismo"> Ciclismo	<br>
+			<input type="checkbox" name="preferencias[]" value="Atletismo"> Atletismo	<br>
+			<input type="checkbox" name="preferencias[]" value="Pesca"> Pesca	<br>
 
 			<input type="submit" name="Enviar">
 		</form>

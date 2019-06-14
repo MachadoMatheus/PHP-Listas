@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 6</title>  
+        <link rel="stylesheet" type="text/css" href="estiloExercicio6.css">     
+    </head>
+    <body>
+	<div class="fundoForm">
+	<b><h1>Primeiro formulário em HTML:</h1></b><br>
+    <form name="primeiroFormulario" id="cadastro" action="" method="post">
+		<label>Nome</label> <br> <input type="text" name="nome" maxlength="150" placeholder="Digite seu nome.." /><br><br>
+		<label>Endereço</label> <br> <input type="text" name="endereco" maxlength="150" placeholder="Digite seu endereço.." /><br><br>
+		<label>CPF</label> <br> <input type="text" name="cpf" maxlength="14" placeholder="Digite seu CPF.." /><br><br>
+		<label>Telefone</label> <br> <input type="tel" name="telefone" maxlength="9" placeholder="Digite seu telefone.."/><br><br>
+		<label>E-mail</label> <br> <input type="email" name="email" maxlength="150" placeholder="Digite seu e-mail.." /><br><br>
+		<label>Senha</label> <br> <input type="password" name="senha" maxlength="30" placeholder="Digite sua senha.." /><br><br>
+		Sexo
+		<input type="radio" id="sexoM" name="sexo" value="M" /> <label for="sexoM">Masculino</label>
+		<input type="radio" id="sexoF" name="sexo" value="F" /> <label for="sexoF">Feminino</label>
+		<br><br>
+		<label>Estado</label><select name="estado" id="estado">
+			<option value="AC">Acre</option>
+			<option value="AL">Alagoas</option>
+			<option value="AP">Amapá</option>
+			<option value="AM">Amazonas</option>
+			<option value="BA">Bahia</option>
+			<option value="CE">Ceará</option>
+			<option value="DF">Distrito Federal</option>
+			<option value="ES">Espírito Santo</option>
+			<option value="GO"> Goiás</option>
+			<option value="MA">Maranhão</option>
+			<option value="MT">Mato Grosso</option>
+			<option value="MS">Mato Grosso do Sul</option>
+			<option value="MG">Minas Gerais</option>
+			<option value="PA">Pará</option>
+			<option value="PB">Paraíba</option>
+			<option value="PR">Paraná</option>
+			<option value="PE">Pernambuco</option>
+			<option value="PI">Piauí</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="RN">Rio Grande do Norte</option>
+			<option value="RS">Rio Grande do Sul</option>
+			<option value="RO">Rondônia</option>
+			<option value="RR">Roraima</option>
+			<option value="SC">Santa Catarina</option>
+			<option value="SP">São Paulo</option>
+			<option value="SE">Sergipe</option>
+			<option value="TO">Tocantins</option>
+		</select>
+		
+		<br><br>
+		Interesses:<br>
+		<input type="checkbox" id = "1" name="interesses" value="prog"/> Programação<br />
+		<input type="checkbox" id = "2" name="interesses" value="hard"/> Hardware<br />
+		<input type="checkbox" id = "3" name="interesses" value="engS"/> Engenharia de software<br />
+		<input type="checkbox" id = "4" name="interesses" value="redes"/> Redes<br />
+		<input type="checkbox" id = "5" name="interesses" value="bd"/> Banco de Dados<br />
+	
+		<label><br>Observações:<br></label>
+		<textarea name="obs" id="mensagem" rows="20" cols="50">Digite aqui...</textarea>
+		
+		<br><br>
+		<a href="https://www.google.com.br/" target="_blank">Página de pesquisa</a>
+	<br><br>
+	<input type="submit" name="enviar" value="Salvar" />
+	
+    </form>
+	</div>
+	</body>
+</html>

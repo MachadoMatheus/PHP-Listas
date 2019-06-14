@@ -1,0 +1,25 @@
+body {
+	background-color: #90cfff;
+	text-align: center;
+}
+.fundoLista {
+	width: 280px;
+	height: 310px;
+	padding-left: 10px;
+	margin: auto;
+}
+.cabecalho {
+	margin: auto;
+	width: 700px;
+}
+.lista {
+	height: 400px;
+	width: 700px;
+	margin: auto;
+	background-color: #6cbfff;
+	box-shadow: 0px 0px 5px;
+}
+ol {
+	text-align: justify;
+	font-size: 25px;
+}
