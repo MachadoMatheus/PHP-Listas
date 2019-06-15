@@ -1,6 +1,6 @@
-- Nome: Matheus
-- Sobrenome: Machado 
-- Senha: a0ed7e
-- Gênero: Heterossexual
-- Idade: 16
-- Preferências de lazer: Viagem, Navegacao, Games, Atletismo.
+Nome: Matheus
+Sobrenome: Machado 
+Senha: a0ed7e
+Gênero: CIS
+Idade: 16
+Preferências de lazer: Viagem, Navegação na Internet, Games, Atletismo.

@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Exercício 1</title>
+	<title>Exercício 2</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css?version=13">
 </head>
 <body> 
@@ -39,12 +39,12 @@ informações de usuários.
 			}
 		}
 
-		$conteudo = "- Nome: $nome
-- Sobrenome: $sobrenome 
-- Senha: $senha
-- Gênero: $genero
-- Idade: $idade
-- Preferências de lazer: $pref";
+		$conteudo = "Nome: $nome
+Sobrenome: $sobrenome 
+Senha: $senha
+Gênero: $genero
+Idade: $idade
+Preferências de lazer: $pref";
 
 		$arquivo = fopen("saidaExercicio2.txt", "w");
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Exercício 5</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css?version=13">
+</head>
+<body>
+<!--5) Escreva um programa para validar o acesso de um usuário ao
+sistema. Os dados de validação devem ser lidos de um arquivo texto,
+em que o usuário é admin e a senha é: 12345. Caso o usuário
+informado em um formulário HTML seja válido, deverá ser exibida a
+mensagem
+“Bem-vindo ao sistema”. Caso seja inválido a mensagem
+deve ser: “Usuário não autorizado” .-->
+	<div class="fundoForm">
+
+		<b style="font-size: 30px;">Formulário PHP</b><br>
+
+		<b>OBS.:Não deixe nada em branco</b><br><br>
+		<form method="POST" action="exercicio5.php">
+			<label for="usuario">Nome de usuario</label>	<br>
+			<input type="text" id="usuario" name="usuario" placeholder="Digite o seu nome de usuario..">	<br>	
+			<label for="senha">Senha</label>	<br>
+			<input type="password" id="senha" name="senhaUsuario" placeholder="Digite sua senha..">	<br>
+
+			<input type="submit" name="Enviar">
+		</form>
+	</div>
+</body>
+</html>
