@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Pro Meu Amor</title>
+	<link rel="stylesheet" type="text/css" href="ProMeuAmor.css">
+</head>
+<body>
+	<div class="fundo">
+		<h1>Lista Ordenada</h1>
+		<ol>
+		<li>Ordem 1</li>
+		<li>Ordem 2</li>
+		<li>Ordem 3</li>
+		<li>Ordem 4</li>
+		<li>Ordem 5</li>
+	</ol>
+	</div>
+
+	<div class="fundo">
+		<h1>Lista Desordenada</h1>
+		<ul>
+		<li>Desordem 1</li>
+		<li>Desordem 2</li>
+		<li>Desordem 3</li>
+		<li>Desordem 4</li>
+		<li>Desordem 5</li>
+	</ul>
+	</div>
+
+	<div class="fundo">
+		<h1>Tabelinha</h1>
+		<table>
+		<tr>
+			<td>Linha 1 - Coluna 1</td>
+			<td>Linha 1 - Coluna 2</td>
+			<td>Linha 1 - Coluna 3</td>
+		</tr>
+		<tr>
+			<td>Linha 2 - Coluna 1</td>
+			<td>Linha 2 - Coluna 2</td>
+			<td>Linha 2 - Coluna 3</td>
+		</tr>
+		<tr>
+			<td>Linha 3 - Coluna 1</td>
+			<td>Linha 3 - Coluna 2</td>
+			<td>Linha 3 - Coluna 3</td>
+		</tr>
+		<tr>
+			<td>Linha 4 - Coluna 1</td>
+			<td>Linha 4 - Coluna 2</td>
+			<td>Linha 4 - Coluna 3</td>
+		</tr>
+	</table>
+	</div>
+
+	<div class="fundo">
+		<form name="formulario" action="ProMeuAmor.php" method="POST">
+			<!-- action = o nome do arquivo que ele envia os dados quando tu clica no botão de enviar-->
+			<label for="nome">Nome</label> <br> <!-- O <label> serve pra quando o usuário clicar nele ativar o que ele referencia (pelo for ali.)
+				Tipo se tu clicar no em "Nome" lá na pagina tu ativa a caixinha do nome :P-->
+			<input type="text" name="nome" id="nome" maxlength="150" placeholder="Digite seu nome.." value="Natheus" /><br><br>
+			<!--type = tipo de input
+				name = nome da variável que vai passar pro PHP
+				id = tem que ser o mesmo do que temno for do label se tu quiser usar 
+				maxlength = define um número máximo de caracteres qeu cabem na caixinha
+				placeholder = define o que aparece enquanto a caixinha tá vazia
+				value = diz o valor que vem por padrão-->
+			<label for="email">E-mail</label> <br> 
+			<input type="email" name="email" id="email" maxlength="150" placeholder="Digite seu e-mail.." /><br><br>
+			<!-- O tipo email não deixa enviar sem o @ -->
+			<label for="senha">Senha</label> <br> 
+			<input type="password" name="senha" id="senha" maxlength="30" placeholder="Digite sua senha.." /><br><br>
+			<!-- o tipo password não deixa aparecer a senha enquanto escreve -->
+			<!--Nesse tipos de selecionar coisas é importante tu não esquecer do value que cada coisa tem, senão quanto tu selecionar eles não tem valor nenhum-->
+			Sexo
+			<input type="radio" id="sexoM" name="sexo" value="M" /> <label for="sexoM">Masculino</label>
+			<input type="radio" id="sexoF" name="sexo" value="F" /> <label for="sexoF">Feminino</label>
+			<!-- O tipo radio tu só pode escolher uma das opções
+					Pra usar ele o name tem que ser o mesmo-->
+			<br><br>
+			<label for="estado">Estado</label>
+			<select name="estado" id="estado"> 
+				<option value="AC">Acre</option> <!--Cada novo coisinha é uma nova opção daquela caixinha-->
+				<option value="AL">Alagoas</option>
+				<option value="AP">Amapá</option>
+				<option value="AM">Amazonas</option>
+				<option value="BA">Bahia</option>
+				<option value="CE">Ceará</option>
+				<option value="DF">Distrito Federal</option>
+				<option value="ES">Espírito Santo</option>
+				<option value="GO"> Goiás</option>
+				<option value="MA">Maranhão</option>
+				<option value="MT">Mato Grosso</option>
+				<option value="MS">Mato Grosso do Sul</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="PA">Pará</option>
+				<option value="PB">Paraíba</option>
+				<option value="PR">Paraná</option>
+				<option value="PE">Pernambuco</option>
+				<option value="PI">Piauí</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="RO">Rondônia</option>
+				<option value="RR">Roraima</option>
+				<option value="SC">Santa Catarina</option>
+				<option value="SP">São Paulo</option>
+				<option value="SE">Sergipe</option>
+				<option value="TO">Tocantins</option>
+			</select>
+
+			Interesses:<br>
+			<input type="checkbox" name="interesses[]" value="prog"/> <label for="1">Programação</label> <br>
+			<input type="checkbox" name="interesses[]" value="hard"/> <label for="2">Hardware</label> <br>
+			<input type="checkbox" name="interesses[]" value="engS"/> <label for="3">Engenharia de software</label> <br>
+			<input type="checkbox" name="interesses[]" value="redes"/> <label for="4">Redes</label> <br>
+			<input type="checkbox" name="interesses[]" value="bd"/> <label for="5">Banco de Dados</label> <br>
+		
+			<label for="mensagem"><br>Observações:<br></label>
+			<textarea name="obs" id="mensagem" rows="20" cols="50" placeholder="Digite aqui...."></textarea>
+			<!--rows = linha
+				cols = colunas-->
+			
+			<br><br>
+			<a href="https://www.google.com.br/" target="_blank">Página de pesquisa</a>
+		<br><br>
+		<input type="submit" value="Enviar" />
+	
+    </form>
+	</div>
+	
+</body>
+</html>
