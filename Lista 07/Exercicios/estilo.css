@@ -1,0 +1,105 @@
+body {
+	background-color: #F3F3F3;
+}
+
+.fundoForm {
+	background-color: #6cbfff;
+	width: 500px;
+	padding: 50px;
+	margin: auto;
+	box-shadow: 0px 0px 10px #194e77;
+}
+
+.dados {
+	background-color: #6cbfff;
+	width: 50%;
+	padding: 20px;
+	margin: auto;
+	box-shadow: 0px 0px 10px #194e77;
+}
+
+.textTitulo {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+li {
+	font-size: 20px;
+}
+
+a:link {
+  color: #194e77;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #206aa0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+select {
+	margin-bottom: 10px;
+	background-color: #194e77;
+ 	border: none;
+ 	color: white;
+ 	cursor: pointer;
+ 	width: 20%;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number]{
+	border-radius: 20px;
+	border-color: transparent;
+	height: 20px;
+	padding: 3px;
+	width: 100%;
+	margin-bottom: 10px; 
+}
+
+input[type=radio], input[type=checkbox] { 
+	width: 20px;
+	cursor: pointer;
+}
+
+input[type=submit] {
+	background-color: #194e77;
+	width: 100px;
+	height: 25px;
+	color: white;
+	float: right;
+	cursor: pointer;
+	border: none;
+}
+
+input[type=submit]:hover {
+	background-color: #194077;
+	box-shadow: 0px 0px 10px #194e77;
+}
+
+textarea {
+	width: 500px;
+	max-width: 593px;
+	height: 100px;
+	max-height: 100px;
+}
+
+button {
+	background-color: #EEF1FC;
+ 	border: none;
+ 	color: #194e77;
+ 	padding: 10px;
+ 	font-size: 16px;
+ 	cursor: pointer;
+ 	float: left;
+}
+
+button:hover {
+	background-color: #194e77;
+	color: #EEF1FC;
+	text-decoration: underline;
+  	text-shadow: 1px 1px 5px #092FC6;
+}
