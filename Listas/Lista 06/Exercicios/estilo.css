@@ -18,6 +18,11 @@ body {
 	box-shadow: 0px 0px 10px #194e77;
 }
 
+.textTitulo {
+	font-size: 40px;
+	font-weight: bold;
+}
+
 li {
 	font-size: 20px;
 }
@@ -85,16 +90,15 @@ textarea {
 button {
 	background-color: #EEF1FC;
  	border: none;
- 	color: #C22900;
- 	padding: 20px;
+ 	color: #194e77;
+ 	padding: 10px;
  	font-size: 16px;
  	cursor: pointer;
  	float: left;
- 	width: 20%;
 }
 
 button:hover {
-	background-color: #C22900;
+	background-color: #194e77;
 	color: #EEF1FC;
 	text-decoration: underline;
   	text-shadow: 1px 1px 5px #092FC6;

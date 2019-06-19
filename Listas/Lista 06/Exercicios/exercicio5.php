@@ -13,6 +13,7 @@ informado em um formulário HTML seja válido, deverá ser exibida a
 mensagem
 “Bem-vindo ao sistema”. Caso seja inválido a mensagem
 deve ser: “Usuário não autorizado” .-->
+	<div class="fundoForm">
 	<?php 
 		$usuario = $_POST["usuario"];
 		$senhaUsuario = $_POST["senhaUsuario"];
@@ -41,12 +42,15 @@ deve ser: “Usuário não autorizado” .-->
 		}
 
 		if ($i == 2) {
-			echo "Bem-vindo ao sistema<br>";
+			echo "<div class='textTitulo'>Bem-vindo ao sistema<br></div>";
+			$lista = substr($_SERVER['PHP_SELF'], 0, 28);
+			echo "<a href='$lista'><button style='float: right;''>Voltar ao Menu Principal</button></a>";
 		} else {
-			echo "Usuário não autorizado<br>";
+			echo "<div class='textTitulo'>Usuário não autorizado<br></div>";
+			echo "<a href='exercicio5.html'><button style='float: right;''>Voltar</button></a>";
 		}
-
-		echo "<a href = 'exercicio5.html'>Voltar</a>";
 	?>
+	
+	</div>
 </body>
 </html>

@@ -25,7 +25,7 @@ select {
 }
 
 table {
-	border:2px solid black; /*Muda as cores e os tamanhos pra tu ver como fica se tu quiser :P*/
+	border:none; /*Muda as cores e os tamanhos pra tu ver como fica se tu quiser :P*/
 	float: left;
 	border-collapse: collapse;
 	width: 25%;
@@ -37,9 +37,7 @@ tr {
 }
 
 td {
-	border-width: 1px; /*Ao invés de colo car que nem eu fiz na table tu pode fazer um por vez que nem aqui que da certo também*/
-	border-style: solid;
-	border-color: black;
+	border: 1px solid #EDEDED;
 	padding: 10px;
 	margin: none;
 } 

@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8">
-	<title>Exercício 2</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css?version=13">
-</head>
-<body> 
-<!--2) Escreva um programa/crie uma página para receber, através de um
-formulário HTML, e gravar em um arquivo texto, as seguintes
-informações de usuários.
-- Nome
-- Sobrenome
-- Senha
-- Gênero
-- Idade
-- Preferências de lazer (com as possíveis opções)
-- Viagem
-- Mergulho
-- Navegação na Internet
-- Videogame
-- Ciclismo
-- Atletismo
-- Pesca-->
-	<?php 
+<?php 
 		$nome = $_POST["nome"];
 		$sobrenome = $_POST["sobrenome"];
 		$senha = $_POST["senha"];
@@ -39,7 +15,8 @@ informações de usuários.
 			}
 		}
 
-		$conteudo = "Nome: $nome
+		$conteudo = 
+"Nome: $nome
 Sobrenome: $sobrenome 
 Senha: $senha
 Gênero: $genero
@@ -50,6 +27,6 @@ Preferências de lazer: $pref";
 
 		fwrite($arquivo, $conteudo);
 		fclose($arquivo);
-	?>
-</body>
-</html>
+
+		header("Location: exercicio3.php");
+?>
