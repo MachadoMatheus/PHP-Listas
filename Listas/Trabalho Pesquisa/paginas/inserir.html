@@ -11,20 +11,17 @@
 	<div class="fundoForm">
 	<form method="POST" action="exibir.php">
 		<label for="produto">Produto</label><br>
-		<input type="text" id="user" name="produo" size="20" placeholder="Digite o nome do poduto a pesquisar..">	<br>
-
-		<label for="nome">Nome</label>
-		<input type="text" name="nome" id="nome" size="30">
+		<input type="text" id="user" name="nome" size="20" placeholder="Digite o nome do produto..">	<br>
 		<label for="fab">Fabricante</label>
-		<input type="text" name="fabricante" id="fab" size="25">
+		<input type="text" name="fabricante" id="fab" size="25" placeholder="Digite o nome do fabricante..">
 		<label for="custo">Custo</label>
-		<input type="number" name="custo" id="custo" size="6">
+		<input type="number" name="custo" id="custo" size="6" placeholder="Digite o custo do produto..">
 		<label for="venda">Venda</label>
-		<input type="number" name="venda" id="venda" size="6">
+		<input type="number" name="venda" id="venda" size="6" placeholder="Digite o valor de venda do produto..">
 		<label for="margem">Margem de Lucro</label>
-		<input type="number" name="margem" id="margem" size="6">
+		<input type="number" name="margem" id="margem" size="6" placeholder="Digite a margem de lucro do produto..">
 		<label for="desc">Dscrição</label>
-		<textarea type="text" name="descricao" id="desc" rows="4" cols="50"></textarea>
+		<textarea type="text" name="descricao" id="desc" rows="4" cols="50" placeholder="Digite uma descrição para o produto.."></textarea>
 
 		<div class="textTitulo">Tipo de Produto</div><br>
 
@@ -34,9 +31,9 @@
 
 		<div class="textTitulo">Indicação do Poduto</div><br>
 
-		<input type="checkbox" name="unidade" value="1" checked>Unidade<br>
-		<input type="checkbox" name="quilo" value="2">Quilo<br>
-		<input type="checkbox" name="pacote" value="3">Pacote
+		<input type="checkbox" name="indicacao[]" value="Unidade" checked>Unidade<br>
+		<input type="checkbox" name="indicacao[]" value="Quilo">Quilo<br>
+		<input type="checkbox" name="indicacao[]" value="Pacote">Pacote
 
 		<input type="submit" name="Enviar">
 	</form>
