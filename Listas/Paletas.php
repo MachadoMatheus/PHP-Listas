@@ -6,18 +6,21 @@
 </head>
 <body>
 	<?php  
-
-		$cores = array("#000000", "#009B89", "#8FE900", "#FF0000", "#890000", "#F3F3F3", "#191B1B", "#002E33", "#00506C", "#008DB1", "#00CEFA", "#EDEDED");
+		$paletas = fopen("paletas.txt", "r");
 
 		echo "<div class='cabecalho'><div>Paletas</div></div>";
 
 		echo "<div class = 'botoes'>";
-		for ($i=0; $i < count($cores); $i++) { /*Elimina as pastas "." e ".."*/
-			$nomeCor = $cores[$i];
-			echo ("<a href='$nomeCor'><button style='background-color:$nomeCor'>$nomeCor</button></a>");
+		while (!feof($paletas)) {
+			$linha = fgets($paletas);
+			$cores = explode(", ", $linha);
+			$porcentagem = 100/count($cores);
+			foreach ($cores as $cor) {
+				echo ("<a href='$cor'><button style='background-color:$cor; width: $porcentagem%;'>$cor</button></a>");
+			}
+			echo "<br>";
 		}
-		echo "</div>"; 
-
+		echo "</div>";
 	?>
 </body>
 </html>

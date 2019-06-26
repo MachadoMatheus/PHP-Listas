@@ -1,5 +1,6 @@
 body {
-	background-color: #F3F3F3;
+	background-color: #0075FF;
+	background-image: linear-gradient(to right, #FF0000, #FF8F00, #FFE400, #06F500, #00FFE6, #AD61FF, #FF00F9);
 	text-align: center;
 }
 
@@ -12,6 +13,8 @@ button {
  	cursor: pointer;
  	float: left;
  	width: 20%;
+ 	cursor: -webkit-grab; 
+ 	cursor: grab;
 }
 
 button:hover {
@@ -19,6 +22,11 @@ button:hover {
 	color: #EEF1FC;
 	text-decoration: underline;
   	text-shadow: 1px 1px 5px #092FC6;
+}
+
+button:active {
+	cursor: -webkit-grabbing; 
+	cursor: grabbing;
 }
 
 .botoes {
@@ -32,8 +40,8 @@ button:hover {
 	font-size: 99px;
 	width: 90%;
 	color: #EEF1FC;
-	background-color: #002E33;
+	background-image: linear-gradient(to right, #FF0000, #FF8F00, #FFE400, #06F500, #00FFE6, #AD61FF, #FF00F9);
 	height: 200px;
-	box-shadow: 10px 10px 10px #191B1B;
-	text-shadow: 5px 5px 5px #191B1B;
+	box-shadow: 10px 10px 10px black;
+	text-shadow: 5px 5px 5px black;
 }
