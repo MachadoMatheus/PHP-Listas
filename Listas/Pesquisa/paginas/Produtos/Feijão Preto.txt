@@ -1,0 +1,7 @@
+Nome = Feijão Preto
+Fabricante = Natheus.com
+Custo = 5.36
+Venda = 8
+Descrição = Feijão sem cor :-P
+Tipo = Alimento
+Indicação = Quilo

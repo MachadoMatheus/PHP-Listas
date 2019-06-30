@@ -4,17 +4,21 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
  	-webkit-box-sizing: border-box;
+ 	--backGround: #EAEACA;
+ 	--coloridoFundoPadrao: #AAE917;
+ 	--coloridoFundoEscuro: #0A1503;
+ 	--coloridoFundoClaro: #FFFFFF;
 }
 
 body {
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	background-color: #EAEACA;
+	background-color: var(--backGround);
 	padding: 10px;
-	color: #0A1503;
+	color: var(--coloridoFundoEscuro);
 }
 
 button {
-	background-color: #FFFFFF;
+	background-color: var(--coloridoFundoClaro);
  	border: none;
  	font-size: 16px;
  	cursor: pointer;
@@ -23,8 +27,8 @@ button {
 }
 
 button:hover {
-	background-color: #AAE917;
-	color: #FFFFFF;
+	background-color: var(--coloridoFundoPadrao);
+	color: var(--coloridoFundoClaro);
 	text-decoration: underline;
   	text-shadow: 1px 1px 5px #092FC6;
 }
@@ -32,7 +36,7 @@ button:hover {
 /*Cabeçalho*/
 .cabecalho {
 	text-align: center;
-	background-color: #AAE917;
+	background-color: var(--coloridoFundoPadrao);
 	padding: 20px;
 }
 .cabecalho h1 {
@@ -41,18 +45,18 @@ button:hover {
 
 .cabecalho a {
 	text-decoration: none;
-	color: #0A1503;
+	color: var(--coloridoFundoEscuro);
 }
 
 /*Barra de Navegação*/
 .barra {
-	background-color: #0A1503;
-	color: #FFFFFF;
+	background-color: var(--coloridoFundoEscuro);
+	color: var(--coloridoFundoClaro);
 	overflow: hidden;
 }
 
 .barra a {
- 	color: #FFFFFF;
+ 	color: var(--coloridoFundoClaro);
  	font-size: 16px;
  	padding: 10px;
  	cursor: pointer;
@@ -61,8 +65,8 @@ button:hover {
 }
 
 .barra a:hover {
-	background-color: #FFFFFF;
-	color: #0A1503;
+	background-color: var(--coloridoFundoClaro);
+	color: var(--coloridoFundoEscuro);
 	text-decoration: underline;
 }
 
@@ -79,7 +83,7 @@ button:hover {
 }
 
 .bloco {
-	background-color: #FFFFFF;
+	background-color: var(--coloridoFundoClaro);
 	padding: 10px;
 	margin-top: 20px;
 }
@@ -87,7 +91,7 @@ button:hover {
 /*Rodapé*/
 .rodape {
 	text-align: center;
-	background-color: #AAE917;
+	background-color: var(--coloridoFundoPadrao);
 	padding: 20px;
   	margin-top: 20px;
   	overflow: hidden;

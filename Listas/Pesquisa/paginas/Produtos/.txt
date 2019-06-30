@@ -3,5 +3,5 @@ Fabricante =
 Custo = 
 Venda = 
 Descrição = 
-Tipo = 
-Indicação = 
+Tipo = Alimento
+Indicação = Unidade
