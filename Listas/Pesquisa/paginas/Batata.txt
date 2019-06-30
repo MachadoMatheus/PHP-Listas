@@ -1,0 +1,7 @@
+Nome = Batata
+Fabricante = Natheus.com
+Custo = 2.5
+Venda = 3
+Descrição = Uma batata bonita :-)
+Tipo = Alimento
+Indicação = Quilo

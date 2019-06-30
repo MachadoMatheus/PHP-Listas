@@ -1,0 +1,7 @@
+Nome = 
+Fabricante = 
+Custo = 
+Venda = 
+Descrição = 
+Tipo = 
+Indicação = 
