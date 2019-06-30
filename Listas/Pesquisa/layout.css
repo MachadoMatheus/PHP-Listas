@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+}
+
+body {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background-color: #EAEACA;
+	padding: 10px;
+	color: #0A1503;
+}
+
+/*Cabeçalho*/
+.cabecalho {
+	text-align: center;
+	background-color: #AAE917;
+	padding: 20px;
+}
+.cabecalho h1 {
+	font-size: 50px;
+}
+
+/*Barra de Navegação*/
+.barra {
+	background-color: #0A1503;
+	color: #FFFFFF;
+	overflow: hidden;
+}
+
+.barra a {
+ 	color: #FFFFFF;
+ 	font-size: 16px;
+ 	padding: 10px;
+ 	cursor: pointer;
+ 	float: left;
+ 	text-decoration: none;
+}
+
+.barra a:hover {
+	background-color: #FFFFFF;
+	color: #0A1503;
+	text-decoration: underline;
+}
+
+/*Colunas de conteúdo*/
+.colunaEsquerda {
+	float: left;
+  	width: 75%;
+}
+
+.colunaDireita {
+	float: left;
+  	width: 25%;
+  	padding-left: 20px;
+}
+
+.bloco {
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+/*Rodapé*/
+.rodape {
+	text-align: center;
+	background-color: #AAE917;
+	padding: 20px;
+  	margin-top: 20px;
+  	overflow: hidden;
+}
+
+.rodape img {
+	width: 100px;
+	height:100px;
+}
+
+/*Clearfix*/
+.corpo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .colunaEsquerda, .colunaDireita {   
+    width: 100%;
+    padding: 0;
+  }
+
+  .rodape img {
+  	width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .barra a {
+    width: 100%;
+    text-align: center;	
+  }
+}

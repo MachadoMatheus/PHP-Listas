@@ -8,7 +8,7 @@
 	<?php  
 		$paletas = fopen("paletas.txt", "r");
 
-		echo "<div class='cabecalho'><div>Paletas</div></div>";
+		echo "<div class = 'cabecalho'>Paletas</div>";
 
 		echo "<div class = 'botoes'>";
 		while (!feof($paletas)) {

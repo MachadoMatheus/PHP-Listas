@@ -1,24 +1,24 @@
 body {
-	background-color: #F3F3F3;
+	background-color: #EAEACA;
 }
 
 button {
-	background-color: #F3F3F3;
+	background-color: #EAEACA;
  	border: none;
- 	color: #C10524;
+ 	color: #FFFFFF;
  	font-size: 16px;
  	cursor: pointer;
 }
 
 button:hover {
-	background-color: #C10524;
+	background-color: #AAE917;
 	color: #F3FFFF;
 	text-decoration: underline;
   	text-shadow: 1px 1px 5px #092FC6;
 }
 
 .corpo {
-	background-color: #F3F3F3;
+	background-color: #EAEACA;
 	width: 70%;
 	padding: 20px;
 	margin: auto;
@@ -29,7 +29,7 @@ button:hover {
 	font-size: 99px;
 	width: 90%;
 	color: #EEF1FC;
-	background-color: #0070FF;
+	background-color: #AAE917;
 	height: 200px;
 	text-align: center;
 }

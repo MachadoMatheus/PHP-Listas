@@ -1,6 +1,6 @@
 body {
 	background-color: #0075FF;
-	background-image: linear-gradient(to right, #FF0000, #FF8F00, #FFE400, #06F500, #00FFE6, #AD61FF, #FF00F9);
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 	text-align: center;
 }
 
@@ -38,10 +38,6 @@ button:active {
 .cabecalho {
 	margin: auto;
 	font-size: 99px;
-	width: 90%;
 	color: #EEF1FC;
-	background-image: linear-gradient(to right, #FF0000, #FF8F00, #FFE400, #06F500, #00FFE6, #AD61FF, #FF00F9);
-	height: 200px;
-	box-shadow: 10px 10px 10px black;
 	text-shadow: 5px 5px 5px black;
 }
