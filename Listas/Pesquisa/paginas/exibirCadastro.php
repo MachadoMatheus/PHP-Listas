@@ -6,65 +6,58 @@
 	<meta charset="utf-8">
 </head>
 <body> 
-		<div class="cabecalho">
-			<a href="http://localhost/PHP-Listas/Listas/Pesquisa/">
-				<h1>Lojinha do PHP</h1>
-			</a>
-		</div>
+	<?php  
+		include("../layouts.php");
+		$links = null; //ex.: array('Facebook' => 'https://facebook.com')
+		$titulo = "Lojinha do PHP";
 
-	<div class="barra">
-		<a href="..">Voltar</a>
-		<a href=".">Recarregar</a>
-	</div>
+		$nome = $_POST["nome"];
+		$fabricante = $_POST["fabricante"];
+		$custo = $_POST["custo"];
+		$venda = $_POST["venda"];
+		$descricao = $_POST["descricao"];
+		$tipo = $_POST["tipo"];
+		$indicacao = $_POST["indicacao"];
 
-	<div class="corpo">
-		<div class="colunaEsquerda">
-			<div class="bloco">
-				<h1>Produto Cadastrado</h1>
-				<?php 
-					$nome = $_POST["nome"];
-					$fabricante = $_POST["fabricante"];
-					$custo = $_POST["custo"];
-					$venda = $_POST["venda"];
-					$descricao = $_POST["descricao"];
-					$tipo = $_POST["tipo"];
-					$indicacao = $_POST["indicacao"];
+		$produto = fopen("Produtos/".$nome.".txt", "w");
 
-					$produto = fopen("Produtos/".$nome.".txt", "w");
+		$valorCusto = floatval($custo);
+		$valorVenda = floatval($venda);
 
-					fwrite($produto, 
+		$margem = $valorVenda - $valorCusto;
+
+		fwrite($produto, 
 "Nome = $nome
 Fabricante = $fabricante
 Custo = $custo
 Venda = $venda
+Margem = $margem
 Descrição = $descricao
 Tipo = $tipo
 Indicação = $indicacao
 ");
-					fclose($produto);
-					$produto = fopen("Produtos/".$nome.".txt", "r");
+		fclose($produto);
+		$produto = fopen("Produtos/".$nome.".txt", "r");
 
-					while (!feof($produto)) {
-						$linha = fgets($produto, 4096);
-						echo "$linha<br>";
-					}
-				?>
-			</div>
-		</div>
+		$produtoCadastrado = "<h1>Produto Cadastrado</h1>";
+		while (!feof($produto)) {
+			$linha = fgets($produto, 4096);
+			$produtoCadastrado = $produtoCadastrado."$linha<br>";
+		}
 
-		<div class="colunaDireita">
-			<div class="bloco">
-				<div align="center"><img src="../../imagens/carrinho.png" height="123px"></div>
-			</div>
-		</div>
-	</div>
+		fclose($produto);
 
-	<div class="rodape">
-		<div style="width: 10%; float: left;"><img src="../imagens/logoUFSM.svg"></div>
-		<div style="width: 80%; float: left;vertical-align: center;">
-			<h3><br>Matheus Machado<br>423 - 2019</h3>
-		</div>
-		<div style="width: 10%; float: left;"><img src="../imagens/logoCTISM.svg"></div>
-	</div>
+		$conteudoEsquerda[] = $produtoCadastrado;
+
+		$conteudoDireita[] = 
+		"<div align='center'><img src='https://machadomatheus.github.io/Imagens/carrinho.png' height='123px'></div>";
+
+		$layout = new layout();
+
+		echo $layout->cabecalho($titulo);
+		echo $layout->barra($links);
+		echo $layout->corpo($conteudoEsquerda, $conteudoDireita);
+		echo $layout->rodape();
+	?>
 </body>
 </html>

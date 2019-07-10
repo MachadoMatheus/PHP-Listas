@@ -6,51 +6,40 @@
 	<meta charset="utf-8">
 </head>
 <body> 
-		<div class="cabecalho">
-			<a href="http://localhost/PHP-Listas/Listas/Pesquisa/">
-				<h1>Lojinha do PHP</h1>
-			</a>
-		</div>
+	<?php  
+		include("../layouts.php");
+		$links = null; //ex.: array('Facebook' => 'https://facebook.com')
+		$titulo = "Lojinha do PHP";
+		$nome = $_POST["nome"];
 
-	<div class="barra">
-		<a href="..">Voltar</a>
-		<a href=".">Recarregar</a>
-	</div>
+		$produtos = scandir("Produtos/");
 
-	<div class="corpo">
-		<div class="colunaEsquerda">
-			<div class="bloco">
-				<h1>Produto Cadastrado</h1>
-				<?php 
-					$nome = $_POST["nome"];
-					try {
-						$produto = fopen("Produtos/".$nome.".txt", "r");
-					} catch(\Exception $e) {
-						echo "Produto não encontrado!!";
-					}
-					
+		$dadosProduto = "<h1>Produto Cadastrado</h1>";
+		foreach ($produtos as $produto) {
+			if ($produto == $nome.".txt") {
+				$arquivo = fopen("Produtos/$nome.txt", "r");
+				while (!feof($arquivo)) {
+					$l = fgets($arquivo);
+					$dadosProduto = $dadosProduto."$l<br>";
+				}
+			}
+		}
 
-					while (!feof($produto)) {
-						$linha = fgets($produto, 4096);
-						echo "$linha<br>";
-					}
-				?>
-			</div>
-		</div>
+		if ($dadosProduto == "<h1>Produto Cadastrado</h1>") {
+			$dadosProduto = $dadosProduto."!!!Produto não encontrado!!!";
+		}
 
-		<div class="colunaDireita">
-			<div class="bloco">
-				<div align="center"><img src="../../imagens/carrinho.png" height="123px"></div>
-			</div>
-		</div>
-	</div>
+		$conteudoEsquerda[] = $dadosProduto;
 
-	<div class="rodape">
-		<div style="width: 10%; float: left;"><img src="../imagens/logoUFSM.svg"></div>
-		<div style="width: 80%; float: left;vertical-align: center;">
-			<h3><br>Matheus Machado<br>423 - 2019</h3>
-		</div>
-		<div style="width: 10%; float: left;"><img src="../imagens/logoCTISM.svg"></div>
-	</div>
+		$conteudoDireita[] = 
+		"<div align='center'><img src='https://machadomatheus.github.io/Imagens/carrinho.png' height='123px'></div>";
+
+		$layout = new layout();
+
+		echo $layout->cabecalho($titulo);
+		echo $layout->barra($links);
+		echo $layout->corpo($conteudoEsquerda, $conteudoDireita);
+		echo $layout->rodape();
+	?>
 </body>
 </html>

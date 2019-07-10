@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Produtos em PHP</title>
-	<link rel="stylesheet" type="text/css" href="estiloIndex.css">
+	<title>Pesquisa de Produto</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<meta charset="utf-8">
 </head>
 <body> 
-	<?php 
-		include("layouts.php");
-		
+	<?php  
+		include("../layouts.php");
 		$links = null; //ex.: array('Facebook' => 'https://facebook.com')
 		$titulo = "Lojinha do PHP";
 		$conteudoEsquerda[] = 
-		"<a href='paginas/pesquisar.php' target='parent'><button><img src='https://machadomatheus.github.io/Imagens/lupa.png' width='50px'> Pesquisar</button></a><br>
-		<a href='paginas/inserir.php' target='parent'><button><img src='https://machadomatheus.github.io/Imagens/add.png' width='50px'> Inserir</button></a>";
+		"<h1>Pesquisa de Produto</h1>
+				<div class='fundoForm'>
+					<form method='POST' action='exibirProduto.php'>
+						<label for='produto'>Produto</label><br>
+						<input type='text' id='produto' name='nome' size='20' placeholder='Digite o nome do poduto a pesquisar..'><br>
+						<input type='submit' name='Enviar'>
+					</form>
+		</div>";
 
 		$conteudoDireita[] = 
 		"<div align='center'><img src='https://machadomatheus.github.io/Imagens/carrinho.png' height='123px'></div>";
-
 
 		$layout = new layout();
 
