@@ -1,7 +1,8 @@
 <?php 
 class funcoes
 {
-	public function paletaComImagem (array $paletas) {
+	public function paletaComImagem (array $paletas) 
+	{
 		echo 
 		"<div class='paletaImagem'> 
 		<table>";
@@ -31,7 +32,16 @@ class funcoes
 				$j++;
 			}
 			$i++;
+			echo 
+			"</td>
+			</tr>";
 		}
+		echo "</table>";
+	}
+
+	public function paletaGradiente(string $paletas)
+	{
+		
 	}
 }
 ?>

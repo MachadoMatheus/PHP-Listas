@@ -30,5 +30,8 @@
 	$funcoes->paletaComImagem($paletaEeImagem);
 	
 	?>
+
+	<div style="background-image: linear-gradient(#F3A001, #CCCCF4, #0077C5, #313853); width: 50%; height: 350px;">
+	</div>
 </body>
 </html>
