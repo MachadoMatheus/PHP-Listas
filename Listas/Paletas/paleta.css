@@ -18,7 +18,7 @@ button {
  	font-size: 16px;
  	cursor: pointer;
  	width: 40%;
- 	cursor: -webkit-grab; 
+ 	cursor: -webkit-grab;
  	cursor: grab;
  	overflow: hidden;
 }
@@ -30,7 +30,7 @@ button:hover {
 }
 
 button:active {
-	cursor: -webkit-grabbing; 
+	cursor: -webkit-grabbing;
 	cursor: grabbing;
 }
 
@@ -48,7 +48,7 @@ button:active {
 }
 
 .paletaImagem table {
-	margin: auto; 
+	margin: auto;
 }
 
 .imagem {

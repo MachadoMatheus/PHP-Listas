@@ -16,10 +16,10 @@
 
 			/* Copy the text inside the text field */
 			document.execCommand('copy');
-		} 
-	</script>	
+		}
+	</script>
 	<div class='cabecalho'>Paletas</div>
-	<?php  
+	<?php
 	include 'funcoes.php';
 	$funcoes = new funcoes();
 
@@ -27,11 +27,10 @@
 
 	$paletaEeImagem['https://MachadoMatheus.github.io/Imagens/LogosByNick/tropical-bird-color-palette-600x600.png'] = ('#4F2D20, #FF9D1E, #019FD3, #BEE600');
 
-	$funcoes->paletaComImagem($paletaEeImagem);
-	
-	?>
+	$paletaEeImagem['https://MachadoMatheus.github.io/Imagens/LogosByNick/9.jpg'] = ('#E84000, #18156E, #0689FF');
 
-	<div style="background-image: linear-gradient(#F3A001, #CCCCF4, #0077C5, #313853); width: 50%; height: 350px;">
-	</div>
+	$funcoes->paletasComImagem($paletaEeImagem);
+
+	?>
 </body>
 </html>
