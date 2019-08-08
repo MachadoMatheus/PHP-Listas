@@ -5,9 +5,7 @@ class layout
 	{
 		return 
 		"<div class='cabecalho'>
-		<a href='http://localhost/PHP-Listas/Listas/Pesquisa/''>
 		<h1>$titulo</h1>
-		</a>
 		</div>";
 	}
 	
@@ -48,7 +46,7 @@ class layout
 				$corpo = $corpo."<div class='bloco'>$bloco</div>";
 			}
 		} else {
-			$smiley = "https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg";
+			$smiley = "https://MachadoMatheus.github.io/Vetores/Achados/Smiley.svg";
 
 			$corpo = $corpo."<div class='bloco' align='center'><img src='$smiley' height='123px'></div>";
 		}
@@ -61,11 +59,11 @@ class layout
 	{
 		return 
 		"<div class='rodape'>
-		<div style='width: 10%; float: left;''><img src='../imagens/logoUFSM.svg'></div>
+		<div style='width: 10%; float: left;''><img src='https://MachadoMatheus.github.io/Vetores/Achados/logoUFSM.svg'></div>
 		<div style='width: 80%; float: left;vertical-align: center;'>
 		<h3><br>Matheus Machado<br>423 - 2019</h3>
 		</div>
-		<div style='width: 10%; float: left;''><img src='../imagens/logoCTISM.svg'></div>
+		<div style='width: 10%; float: left;''><img src='https://MachadoMatheus.github.io/Vetores/Achados/logoCTISM.svg'></div>
 		</div>";
 	}
 }

@@ -3,6 +3,7 @@
 <head>
 	<title><?php echo basename(__DIR__); ?></title>
 	<link rel="stylesheet" type="text/css" href="estiloIndex.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 </head>
 <body> 
