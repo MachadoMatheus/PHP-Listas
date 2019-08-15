@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<title>Pesquisa de Produto</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="../estiloIndex.css">
 	<meta charset="utf-8">
 </head>
 <body> 
@@ -21,7 +21,7 @@
 		</div>";
 
 		$conteudoDireita[] = 
-		"<div align='center'><img src='https://machadomatheus.github.io/Imagens/carrinho.png' height='123px'></div>";
+		"<div align='center'><img src='https://machadomatheus.github.io/Vetores/Achados/carrinho.svg' height='123px'></div>";
 
 		$layout = new layout();
 
