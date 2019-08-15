@@ -48,7 +48,7 @@
 					$corpo = $corpo."<div class='bloco'>$bloco</div>";
 				}
 			} else {
-				$corpo = $corpo."<div class='bloco' align='center'><img src='https://machadomatheus.github.io/Imagens/Smiley.svg' height='123px'></div>";
+				$corpo = $corpo."<div class='bloco' align='center'><img src='https://machadomatheus.github.io/Vetores/Achados/Smiley.svg' height='123px'></div>";
 			}
 			$corpo = $corpo."</div>";
 
@@ -59,11 +59,11 @@
 		{
 			return 
 	"<div class='rodape'>
-		<div style='width: 10%; float: left;''><img src='https://machadomatheus.github.io/Imagens/logoUFSM.svg'></div>
+		<div style='width: 10%; float: left;''><img src='https://machadomatheus.github.io/Vetores/Achados/logoUFSM.svg'></div>
 		<div style='width: 80%; float: left;vertical-align: center;'>
 			<h3><br>Matheus Machado<br>423 - 2019</h3>
 		</div>
-		<div style='width: 10%; float: left;''><img src='https://machadomatheus.github.io/Imagens/logoCTISM.svg'></div>
+		<div style='width: 10%; float: left;''><img src='https://machadomatheus.github.io/Vetores/Achados/logoCTISM.svg'></div>
 	</div>";
 		}
 	}

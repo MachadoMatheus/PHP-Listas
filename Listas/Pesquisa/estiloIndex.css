@@ -33,6 +33,64 @@ button:hover {
   	text-shadow: 1px 1px 5px #092FC6;
 }
 
+/*Formulários*/
+.fundoForm {
+	background-color: var(--coloridoFundoPadrao);
+	padding: 20px;
+	padding-bottom: 10px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.textTitulo {
+	text-decoration: underline;
+}
+
+select {
+	margin-bottom: 10px;
+	background-color: #194e77;
+ 	border: none;
+ 	color: white;
+ 	cursor: pointer;
+ 	width: 20%;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number]{
+	border-radius: 20px;
+	border-color: transparent;
+	height: 40px;
+	padding-left: 15px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+input[type=radio], input[type=checkbox] { 
+	width: 20px;
+	cursor: pointer;
+}
+
+input[type=submit] {
+	background-color: var(--coloridoFundoEscuro);
+	width: 100px;
+	height: 25px;
+	color: white;
+	float: right;
+	cursor: pointer;
+	border: none;
+}
+
+input[type=submit]:hover {
+	box-shadow: 0px 0px 10px var(--coloridoFundoEscuro);
+}
+
+textarea {
+	width: 500px;
+	max-width: 593px;
+	height: 100px;
+	max-height: 100px;
+}
+
+
 /*Cabeçalho*/
 .cabecalho {
 	text-align: center;

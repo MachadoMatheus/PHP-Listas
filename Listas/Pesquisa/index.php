@@ -12,11 +12,11 @@
 		$links = null; //ex.: array('Facebook' => 'https://facebook.com')
 		$titulo = "Lojinha do PHP";
 		$conteudoEsquerda[] = 
-		"<a href='paginas/pesquisar.php' target='parent'><button><img src='https://machadomatheus.github.io/Imagens/lupa.png' width='50px'> Pesquisar</button></a><br>
-		<a href='paginas/inserir.php' target='parent'><button><img src='https://machadomatheus.github.io/Imagens/add.png' width='50px'> Inserir</button></a>";
+		"<a href='paginas/pesquisar.php' target='parent'><button><img src='https://machadomatheus.github.io/Vetores/Achados/lupa.svg' width='50px'> Pesquisar</button></a><br>
+		<a href='paginas/inserir.php' target='parent'><button><img src='https://machadomatheus.github.io/Vetores/Achados/add.svg' width='50px'> Inserir</button></a>";
 
 		$conteudoDireita[] = 
-		"<div align='center'><img src='https://machadomatheus.github.io/Imagens/carrinho.png' height='123px'></div>";
+		"<div align='center'><img src='https://machadomatheus.github.io/Vetores/Achados/carrinho.svg' height='123px'></div>";
 
 
 		$layout = new layout();
