@@ -5,7 +5,6 @@
 		{
 			return 
 	"<div class='cabecalho'>
-		<a href='http://localhost/Pesquisa/' target='blank'>
 			<h1>$titulo</h1>
 		</a>
 	</div>";
@@ -16,8 +15,7 @@
 		{
 			$barra = 
 				"<div class='barra'>
-					<a href='http://localhost/Pesquisa/' target='blank'>Voltar</a>
-					<a href='.''>Recarregar</a>";
+					<a href='http://github.com/MachadoMatheus' target='blank'>GitHub</a>";
 
 			if (!is_Null($links)) {
 				foreach ($links as $nomePagina => $link) {
