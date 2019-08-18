@@ -1,8 +1,41 @@
 <?php
 include("../layouts.php");
 
+if (!empty($_POST)) {
+	$nome = trim($_POST["nome"]);
+	$fabricante = trim($_POST["fabricante"]);
+	$custo = $_POST["custo"];
+	$venda = $_POST["venda"];
+	$descricao = trim($_POST["descricao"]);
+	$tipo = trim($_POST["tipo"]);
+	$indicacao = trim($_POST["indicacao"]);
+
+	if ($custo < 0 || $venda < 0) {
+		$conteudoEsquerda[] = "Cadastro não realizado:<br>Não são aceitos números negativos para os campos Custo e Venda";
+	} else {
+		$produto = fopen("Produtos/".$nome.".txt", "w");
+
+		$margem = $venda - $custo;
+
+		fwrite($produto, 
+"Nome = $nome
+Fabricante = $fabricante
+Custo = $custo
+Venda = $venda
+Margem = $margem
+Descrição = $descricao
+Tipo = $tipo
+Indicação = $indicacao
+");
+		fclose($produto);
+		$conteudoEsquerda[] = "
+		<form action='exibirProduto.php' method='POST'><input type='hidden' name='nome' value='$nome'>
+		 <input style='float:none; width:100%; height:50px; font-size:30px;' type='submit' value='Cadastro realizado com sucesso!!! Clique aqui para visualizar'></form> ";
+	}
+}
+
 $links = null; //ex.: array('Facebook' => 'https://facebook.com')
-$titulo = "Lojinha do PHP";
+$titulo = "Inserir Produto";
 $conteudoEsquerda[] = 
 "<h1>Cadastro de Produto</h1>
 	<div class='fundoForm'>
@@ -16,7 +49,7 @@ $conteudoEsquerda[] =
 			<label class='textTitulo' for='venda'>Venda</label>
 			<input type='number' name='venda' id='venda' size='6' step='0.01' required='required' placeholder='Digite o valor de venda do produto..'>
 			<label class='textTitulo' for='desc'>Descrição</label><br>
-			<textarea type='text' name='descricao' id='desc' rows='4' cols='50' placeholder='Digite uma descrição para o produto..'></textarea>
+			<textarea type='text' name='descricao' id='desc' rows='4' cols='50' required='required' placeholder='Digite uma descrição para o produto..'></textarea>
 
 			<div class='textTitulo'>Tipo de Produto</div>
 
@@ -39,7 +72,7 @@ $conteudoDireita[] =
 
 $layout = new layout();
 
-echo $layout->cabecalho($titulo, $titulo, "../estiloIndex.css");
+echo $layout->cabecalho($titulo);
 echo $layout->barra($links);
 echo $layout->corpo($conteudoEsquerda, $conteudoDireita);
 echo $layout->rodape();

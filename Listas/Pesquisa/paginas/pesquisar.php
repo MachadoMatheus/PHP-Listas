@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<title>Pesquisa de Produto</title>
-	<link rel="stylesheet" type="text/css" href="../estiloIndex.css">
-	<link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap" rel="stylesheet">
-	<meta charset="utf-8">
-</head>
-<body> 
-	<?php  
+<?php  
 		include("../layouts.php");
 		$links = null; //ex.: array('Facebook' => 'https://facebook.com')
-		$titulo = "Lojinha do PHP";
+		$titulo = "Pesquisar Produto";
 		$conteudoEsquerda[] = 
 		"<h1>Pesquisa de Produto</h1>
 				<div class='fundoForm'>
@@ -30,6 +21,4 @@
 		echo $layout->barra($links);
 		echo $layout->corpo($conteudoEsquerda, $conteudoDireita);
 		echo $layout->rodape();
-	?>
-</body>
-</html>
+?>

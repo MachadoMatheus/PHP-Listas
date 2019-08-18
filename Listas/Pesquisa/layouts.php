@@ -1,21 +1,25 @@
 <?php 
 	class layout
 	{
-		public function cabecalho ($tituloCabecalho, $tituloPagina = null, $caminhoEstilo = null)
+		public function cabecalho ($tituloPagina = null, $tituloCabecalho = null, $caminhoEstilo = null)
 		{
-			$cabecalho = "<!DOCTYPE html><html lang='pt-br'><head>";
+			$nomeProjeto = "Lojinha do PHP";
+
 			if (is_Null($tituloPagina)) {
-				$cabecalho = $cabecalho."<title>Lojinha do PHP</title>";
-			} else {
-				$cabecalho = $cabecalho."<title>".$tituloPagina."P</title>";
+				$tituloPagina = $nomeProjeto;
 			}
+			$cabecalho = "<!DOCTYPE html><html lang='pt-br'><head><title>$tituloPagina</title><link href='http://MachadoMatheus.github.io/favicon.ico' rel='shortcut icon' type='image/x-icon' />";
+
 
 			if (is_Null($caminhoEstilo)) {
-				$cabecalho = $cabecalho."<link rel='stylesheet' type='text/css' href='https://MachadoMatheus.github.io/globalLayout.css'>";
-			} else {
-				$cabecalho = $cabecalho."<link rel='stylesheet' type='text/css' href='$caminhoEstilo'>";
+				$caminhoEstilo = "https://MachadoMatheus.github.io/globalLayout.css";
 			}
+			$cabecalho = $cabecalho."<link rel='stylesheet' type='text/css' href='$caminhoEstilo'>";
 
+
+			if (is_Null($tituloCabecalho)) {
+				$tituloCabecalho = $nomeProjeto;
+			}
 			$cabecalho = $cabecalho."
 				<link href='https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap' rel='stylesheet'>
 				<meta charset='utf-8'>
@@ -25,6 +29,7 @@
 					<h1>$tituloCabecalho</h1>
 					</a>
 			</div>";
+
 			return $cabecalho;
 		}
 	

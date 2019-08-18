@@ -1,0 +1,8 @@
+Nome = """
+Fabricante = <div style='background-image: linear-gradient(red, blue); width: 100%; height: 500px;'></div>
+Custo = 2.99
+Venda = 4.01
+Margem = 1.02
+Descrição = <div style='background-image: linear-gradient(red, blue); width: 100%; height: 500px;'></div>
+Tipo = Alimento
+Indicação = Unidade

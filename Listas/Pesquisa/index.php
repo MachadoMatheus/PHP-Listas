@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<title>Produtos em PHP</title>
-	<link rel="stylesheet" type="text/css" href="estiloIndex.css">
-	<link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap" rel="stylesheet">
-	<meta charset="utf-8">
-</head>
-<body> 
-	<?php 
+<?php 
 		include("layouts.php");
 		
 		$links = null; //ex.: array('Facebook' => 'https://facebook.com')
@@ -26,6 +17,4 @@
 		echo $layout->barra($links);
 		echo $layout->corpo($conteudoEsquerda, $conteudoDireita);
 		echo $layout->rodape();
-	?>
-</body>
-</html>
+?>

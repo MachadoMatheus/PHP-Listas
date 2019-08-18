@@ -1,0 +1,8 @@
+Nome = Batata
+Fabricante = L'oreal
+Custo = 3.25
+Venda = 6
+Margem = 2.75
+Descrição = Batata bonita e suculenta
+Tipo = Alimento
+Indicação = Quilo
