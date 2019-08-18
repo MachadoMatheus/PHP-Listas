@@ -1,9 +1,0 @@
-
-Nome = xfjsjk
-Fabricante = sksk
-Custo = 46
-Venda = 48
-Margem = 2
-Descrição = 797949
-Tipo = Alimento
-Indicação = Unidade

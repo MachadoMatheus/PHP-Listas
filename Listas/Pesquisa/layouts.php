@@ -1,13 +1,31 @@
 <?php 
 	class layout
 	{
-		public function cabecalho ($titulo)
+		public function cabecalho ($tituloCabecalho, $tituloPagina = null, $caminhoEstilo = null)
 		{
-			return 
-	"<div class='cabecalho'>
-			<h1>$titulo</h1>
-		</a>
-	</div>";
+			$cabecalho = "<!DOCTYPE html><html lang='pt-br'><head>";
+			if (is_Null($tituloPagina)) {
+				$cabecalho = $cabecalho."<title>Lojinha do PHP</title>";
+			} else {
+				$cabecalho = $cabecalho."<title>".$tituloPagina."P</title>";
+			}
+
+			if (is_Null($caminhoEstilo)) {
+				$cabecalho = $cabecalho."<link rel='stylesheet' type='text/css' href='https://MachadoMatheus.github.io/globalLayout.css'>";
+			} else {
+				$cabecalho = $cabecalho."<link rel='stylesheet' type='text/css' href='$caminhoEstilo'>";
+			}
+
+			$cabecalho = $cabecalho."
+				<link href='https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap' rel='stylesheet'>
+				<meta charset='utf-8'>
+			</head>
+			<body> 
+				<div class='cabecalho'>
+					<h1>$tituloCabecalho</h1>
+					</a>
+			</div>";
+			return $cabecalho;
 		}
 	
 
@@ -62,7 +80,9 @@
 			<h3><br>Matheus Machado<br>423 - 2019</h3>
 		</div>
 		<div style='width: 10%; float: left;''><img src='https://machadomatheus.github.io/Vetores/Achados/logoCTISM.svg'></div>
-	</div>";
+	</div>
+</body>
+</html>";
 		}
 	}
 ?>

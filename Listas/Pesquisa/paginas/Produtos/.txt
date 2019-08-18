@@ -1,7 +1,0 @@
-Nome = 
-Fabricante = 
-Custo = 
-Venda = 
-Descrição = 
-Tipo = Alimento
-Indicação = Unidade

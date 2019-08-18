@@ -1,8 +1,0 @@
-Nome = Batata
-Fabricante = Seara
-Custo = 2
-Venda = 3.5
-Margem = 1.5
-Descrição = Batata inglesa fresquinha
-Tipo = Alimento
-Indicação = Quilo

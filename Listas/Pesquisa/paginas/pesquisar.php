@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<title>Pesquisa de Produto</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="../estiloIndex.css">
 	<link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 </head>
@@ -16,7 +16,7 @@
 				<div class='fundoForm'>
 					<form method='POST' action='exibirProduto.php'>
 						<label for='produto'>Produto</label><br>
-						<input type='text' id='produto' name='nome' size='20' placeholder='Digite o nome do poduto a pesquisar..'><br>
+						<input type='text' id='produto' name='nome' size='20' required='required' placeholder='Digite o nome do poduto a pesquisar..'><br>
 						<input type='submit' name='Enviar'>
 					</form>
 		</div>";

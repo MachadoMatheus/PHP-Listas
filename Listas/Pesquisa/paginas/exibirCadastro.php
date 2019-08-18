@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<title>Produto Cadastrado</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="../estiloIndex.css">
 	<link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 </head>
@@ -22,10 +22,7 @@
 
 		$produto = fopen("Produtos/".$nome.".txt", "w");
 
-		$valorCusto = floatval($custo);
-		$valorVenda = floatval($venda);
-
-		$margem = $valorVenda - $valorCusto;
+		$margem = $venda - $custo;
 
 		fwrite($produto, 
 "Nome = $nome

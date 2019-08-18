@@ -1,8 +1,0 @@
-Nome = Galinha Assada
-Fabricante = Seara
-Custo = 1
-Venda = 10
-Margem = 9
-Descrição = Galinha Maluca NÃO Crua
-Tipo = Alimento
-Indicação = Quilo
