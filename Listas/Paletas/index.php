@@ -29,6 +29,8 @@
 
 	$paletaEeImagem['https://MachadoMatheus.github.io/Imagens/LogosByNick/9.jpg'] = ('#E84000, #18156E, #0689FF');
 
+	$paletaEeImagem['https://MachadoMatheus.github.io/Imagens/LogosByNick/burnt-orange-color-hex-600x600.png'] = ('#FDF2B8, #E88200, #CB2800, #34262B');
+
 	$funcoes->paletasComImagem($paletaEeImagem);
 
 	?>
