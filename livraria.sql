@@ -30,14 +30,14 @@ CREATE TABLE livro (
 );
 
 
-INSERT INTO editora (cnpj, endereco, cidade) VALUES ("11111111111114", "Avenida Roraima nº 1127", "Santa Maria - RS");
-INSERT INTO editora (cnpj, endereco, cidade) VALUES ("22222222222214", "Avenida Roraima nº 2227", "Santa Maria - RS");
-INSERT INTO editora (cnpj, endereco, cidade) VALUES ("33333333333314", "Avenida Roraima nº 3327", "Alegrete - RS");
-INSERT INTO editora (cnpj, endereco, cidade) VALUES ("44444444444414", "Avenida Roraima nº 4427", "Porto Alegre - RS");
-INSERT INTO editora (cnpj, endereco, cidade) VALUES ("55555555555514", "Avenida Roraima nº 5527", "Santa Maria - RS");
-INSERT INTO editora (cnpj, endereco, cidade) VALUES ("66666666666614", "Avenida Roraima nº 6627", "Santa Maria - RS");
-INSERT INTO editora (cnpj, endereco, cidade) VALUES ("77777777777714", "Avenida Roraima nº 7727", "Alegrete - RS");
-INSERT INTO editora (cnpj, endereco, cidade) VALUES ("88888888888814", "Avenida Roraima nº 8827", "Porto Alegre - RS");
+INSERT INTO editora (nome, cnpj, endereco, cidade) VALUES ("Asus" , "11111111111114", "Avenida Roraima nº 1127", "Santa Maria - RS");
+INSERT INTO editora (nome, cnpj, endereco, cidade) VALUES ("Samsung" , "22222222222214", "Avenida Roraima nº 2227", "Santa Maria - RS");
+INSERT INTO editora (nome, cnpj, endereco, cidade) VALUES ("Apple" , "33333333333314", "Avenida Roraima nº 3327", "Alegrete - RS");
+INSERT INTO editora (nome, cnpj, endereco, cidade) VALUES ("Huawei" , "44444444444414", "Avenida Roraima nº 4427", "Porto Alegre - RS");
+INSERT INTO editora (nome, cnpj, endereco, cidade) VALUES ("Xiaomi" , "55555555555514", "Avenida Roraima nº 5527", "Santa Maria - RS");
+INSERT INTO editora (nome, cnpj, endereco, cidade) VALUES ("LG" , "66666666666614", "Avenida Roraima nº 6627", "Santa Maria - RS");
+INSERT INTO editora (nome, cnpj, endereco, cidade) VALUES ("Motorola" , "77777777777714", "Avenida Roraima nº 7727", "Alegrete - RS");
+INSERT INTO editora (nome, cnpj, endereco, cidade) VALUES ("Quantum" , "88888888888814", "Avenida Roraima nº 8827", "Porto Alegre - RS");
 
 
 INSERT INTO autor  (nome, nascimento) VALUES ("Matheus", "2003-01-12");
