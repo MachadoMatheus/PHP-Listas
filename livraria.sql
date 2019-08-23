@@ -170,3 +170,7 @@ INSERT INTO livro (cod_autor, cod_editora, titulo, valor, publicacao, volume) VA
 INSERT INTO livro (cod_autor, cod_editora, titulo, valor, publicacao, volume) VALUES (9, 3, "The poisonwood Bible", 19.99, "2018-04-14", "1");
 INSERT INTO livro (cod_autor, cod_editora, titulo, valor, publicacao, volume) VALUES (9, 3, "Tudo depende de como você vê as coisas", 19.99, "2018-04-14", "1");
 INSERT INTO livro (cod_autor, cod_editora, titulo, valor, publicacao, volume) VALUES (9, 3, "O dilema do onívoro", 19.99, "2018-04-14", "1");
+
+
+UPDATE livro SET publicacao = "2018-09-14" WHERE publicacao = "2018-04-14";
+UPDATE livro SET valor = 24.99 WHERE cod_editora = 3;
