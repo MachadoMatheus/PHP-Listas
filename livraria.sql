@@ -4,6 +4,7 @@ USE livraria;
 
 CREATE TABLE editora (
 	cod_editora INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(255),
 	cnpj VARCHAR(14),
 	endereco VARCHAR(255),
 	cidade VARCHAR(255)
@@ -63,7 +64,7 @@ INSERT INTO autor  (nome, nascimento) VALUES ("Jujuba", "2018-04-14");
 INSERT INTO autor  (nome, nascimento) VALUES ("Comunismo", "2003-01-12");
 INSERT INTO autor  (nome, nascimento) VALUES ("All-Star", "2002-11-27");
 INSERT INTO autor  (nome, nascimento) VALUES ("Maurício", "2018-04-14");
-INSERT INTO autor  (nome, nascimento) VALUES ("Senegal", "2003-01-12");
+INSERT INTO autor  (nome, nascimento) VALUES ("Bolinha", "2003-01-12");
 INSERT INTO autor  (nome, nascimento) VALUES ("Martinica", "2002-11-27");
 INSERT INTO autor  (nome, nascimento) VALUES ("Chiquita Bacana", "2018-04-14");
 INSERT INTO autor  (nome, nascimento) VALUES ("Ônibus", "2003-01-12");
