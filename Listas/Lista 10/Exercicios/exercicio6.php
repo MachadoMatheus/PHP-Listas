@@ -6,7 +6,7 @@
 		if (isset($_COOKIE['nomes'])) {
 			$nomesAnteriores = unserialize($_COOKIE['nomes']);
 			if (count($nomesAnteriores) > 5) {
-				setcookie("nomes", null, time()+5);
+				setcookie("nomes", null, time() + 5);
 				$conteudoEsquerda[] = "O cookie \"nomes\" se autodestruirá em 5 segundos!!!!";
 				unset($avisos);
 			}

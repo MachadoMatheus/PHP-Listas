@@ -22,11 +22,11 @@
 
 		$conteudoEsquerda[] = "<form action='".$_SERVER["PHP_SELF"]."' method='POST'>
 		<label for='nome'><div class='textTitulo'>Nome</div></label>
-		<input type='text' name='nome' id='nome' placeholder='$nomeAnterior' required='required'>
+		<input type='text' name='nome' id='nome' placeholder='Ex.:$nomeAnterior' required='required'>
 		<label for='tel'><div class='textTitulo'>Telefone</div></label>
-		<input type='number' name='tel' id='tel' placeholder='$telAnterior' required='required'>
+		<input type='number' name='tel' id='tel' placeholder='Ex.:$telAnterior' required='required'>
 		<label for='email'><div class='textTitulo'>Email</div></label>
-		<input type='email' name='email' id='email' placeholder='$emailAnterior' required='required'>
+		<input type='email' name='email' id='email' placeholder='Ex.:$emailAnterior' required='required'>
 		<input type='submit' value='Enviar'>
 		</form>";
 
