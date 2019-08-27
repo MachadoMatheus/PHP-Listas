@@ -1,200 +1,202 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Acme', sans-serif;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	--backGround: #EAEACA;
-	--coloridoFundoPadrao: #AAE917;
-	--coloridoFundoEscuro: #0A1503;
-	--coloridoFundoClaro: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  --backGround: #e7dfdd;
+  --coloridoFundoPadrao: #4717f6;
+  --coloridoFundoEscuro: #0e0b16;
+  --coloridoFundoClaro: #ffffff;
+  color: var(--coloridoFundoEscuro);
 }
 
 body {
-	background-color: var(--backGround);
-	padding: 10px;
-	color: var(--coloridoFundoEscuro);
+  background-color: var(--backGround);
+  padding: 10px;
+  font-size:21px;
 }
 /*Links*/
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /*Botões*/
 .botoes {
-	width: 100%;
-	margin: auto;
-	overflow: hidden;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
 button {
-	background-color: var(--coloridoFundoClaro);
- 	border: none;
- 	font-size: 30px;
- 	cursor: pointer;
- 	width: 100%;
- 	padding: 5px;
+  background-color: var(--coloridoFundoClaro);
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  width: 100%;
+  padding: 5px;
 }
 
 button:hover {
-	background-color: var(--coloridoFundoPadrao);
-	color: var(--coloridoFundoClaro);
-	text-decoration: underline;
-  	text-shadow: 1px 1px 5px black;
+  background-color: var(--coloridoFundoPadrao);
+  color: var(--coloridoFundoClaro);
+  text-decoration: underline;
+    text-shadow: 1px 1px 5px black;
 }
 
 /*Formulários*/
 .fundoForm {
-	background-color: var(--coloridoFundoPadrao);
-	padding: 20px;
-	padding-bottom: 10px;
-	margin: auto;
-	overflow: hidden;
+  background-color: var(--coloridoFundoPadrao);
+  padding: 20px;
+  padding-bottom: 10px;
+  margin: auto;
+  overflow: hidden;
 }
 
 .textTitulo {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 select {
-	margin-bottom: 10px;
-	background-color: var(--coloridoFundoEscuro);
- 	border: none;
- 	color: white;
- 	cursor: pointer;
- 	width: 20%;
+  margin-bottom: 10px;
+  background-color: var(--coloridoFundoEscuro);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 20%;
 }
 
 input[type=text], input[type=password], input[type=email], input[type=number]{
-	font-size: 20px;
-	border-radius: 20px;
-	border-color: transparent;
-	height: 35px;
-	padding: 5px;
-	width: 100%;
-	margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  border-color: transparent;
+  height: 35px;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: var(--backGround);
 }
 
 input[type=radio], input[type=checkbox] { 
-	width: 20px;
-	cursor: pointer;
+  width: 20px;
+  cursor: pointer;
 }
 
 input[type=submit] {
-	background-color: var(--coloridoFundoEscuro);
-	width: 100px;
-	height: 25px;
-	color: white;
-	float: right;
-	cursor: pointer;
-	border: none;
+  background-color: var(--coloridoFundoEscuro);
+  width: 100px;
+  height: 25px;
+  color: white;
+  float: right;
+  cursor: pointer;
+  border: none;
 }
 
 input[type=submit]:hover {
-	box-shadow: 0px 0px 10px var(--coloridoFundoEscuro);
+  box-shadow: 0px 0px 10px var(--coloridoFundoEscuro);
 }
 
 textarea {
-	width: 500px;
-	max-width: 593px;
-	height: 100px;
-	max-height: 100px;
+  width: 500px;
+  max-width: 593px;
+  height: 100px;
+  max-height: 100px;
 }
 /*Cabeçalho*/
 .cabecalho {
-	text-align: center;
-	background-color: var(--coloridoFundoPadrao);
-	padding: 10px;
+  text-align: center;
+  background-color: var(--coloridoFundoPadrao);
+  padding: 10px;
 }
 .cabecalho h1 {
-	font-size: 60px;
-	font-family: 'Indie Flower', cursive;
+  font-size: 60px;
+  font-family: 'Indie Flower', cursive;
 }
 
 .cabecalho a {
-	color: var(--coloridoFundoEscuro);
+  color: var(--coloridoFundoEscuro);
 }
 
 /*Barra de Navegação*/
 .barra {
-	background-color: var(--coloridoFundoEscuro);
-	color: var(--coloridoFundoClaro);
-	overflow: hidden;
+  background-color: var(--coloridoFundoEscuro);
+  color: var(--coloridoFundoClaro);
+  overflow: hidden;
 }
 
 .barra a {
-	color: var(--coloridoFundoClaro);
-	font-size: 16px;
-	padding: 10px;
-	cursor: pointer;
-	float: left;
+  color: var(--coloridoFundoClaro);
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  float: left;
 }
 
 .barra a:hover {
-	background-color: var(--coloridoFundoClaro);
-	color: var(--coloridoFundoEscuro);
-	text-decoration: underline;
+  background-color: var(--coloridoFundoClaro);
+  color: var(--coloridoFundoEscuro);
+  text-decoration: underline;
 }
 
 .barra img {
-	width: 10%;
+  width: 10%;
 }
 
 /*Colunas de conteúdo*/
 .colunaEsquerda {
-	float: left;
-	width: 80%;
+  float: left;
+  width: 80%;
 }
 
 .colunaDireita {
-	float: right;
-	width: 20%;
-	padding-left: 20px;
+  float: right;
+  width: 20%;
+  padding-left: 20px;
 }
 
 .bloco {
-	background-color: var(--coloridoFundoClaro);
-	padding: 10px;
-	margin-top: 20px;
-	overflow: hidden;
+  background-color: var(--coloridoFundoClaro);
+  padding: 10px;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 /*Rodapé*/
 .rodape {
-	text-align: center;
-	background-color: var(--coloridoFundoPadrao);
-	padding: 20px;
-	margin-top: 20px;
-	overflow: hidden;
+  text-align: center;
+  background-color: var(--coloridoFundoPadrao);
+  padding: 20px;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 .rodape img {
-	width: 100px;
-	height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 /*Clearfix*/
 .corpo:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: '';
+  display: table;
+  clear: both;
 }
 
 @media screen and (max-width: 800px) {
-	.colunaEsquerda, .colunaDireita {   
-		width: 100%;
-		padding: 0;
-	}
+  .colunaEsquerda, .colunaDireita {   
+    width: 100%;
+    padding: 0;
+  }
 
-	.rodape img {
-		width: 100%;
-	}
+  .rodape img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 400px) {
-	.barra a {
-		width: 100%;
-		text-align: center;	
-	}
+  .barra a {
+    width: 100%;
+    text-align: center; 
+  }
 }

@@ -21,7 +21,7 @@
 				$tituloCabecalho = $nomeProjeto;
 			}
 			$cabecalho = $cabecalho."
-				<link href='https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap' rel='stylesheet'>
+				<link href='https://fonts.googleapis.com/css?family=Oswald:300|Indie+Flower&display=swap' rel='stylesheet'>
 				<meta charset='utf-8'>
 			</head>
 			<body> 
@@ -69,7 +69,7 @@
 					$corpo = $corpo."<div class='bloco'>$bloco</div>";
 				}
 			} else {
-				$corpo = $corpo."<div class='bloco' align='center'><img src='https://machadomatheus.github.io/Vetores/Achados/Smiley.svg' height='123px'></div>";
+				$corpo = $corpo."<div class='bloco' align='center'><img src='https://machadomatheus.github.io/Vetores/Feitos/carvao.svg' height='123px'></div>";
 			}
 			$corpo = $corpo."</div>";
 

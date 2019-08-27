@@ -1,0 +1,16 @@
+AAE917, 0A1503, EAEACA
+4abdac, fc4a1a, dfdce3
+c0b283, 373737, dcd0c0, f4f4f4
+4717f6, 0e0b16, e7dfdd
+76323f, c09f80, d7cec7
+3cc47c, 1e392a, 828081, f4f4f4
+94618e, 49274a, f4decb, f8eee7
+f9cf00, 4484ce, d9d9d9
+f7ce3e, 0a1612, c5c1c0
+77c9d4, 015249, a5a5af
+ff533d, 0f1626, f5f5f5
+fedc3d, 000000, fea680
+43c0f6, f81884, f5ce28, f2eee2
+99d3df, 428EBE, cdcdcd, e9e9e9
+d48cf8, 08302f, b5e582
+93c178, 465c8b, dfdce3
