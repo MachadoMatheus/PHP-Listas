@@ -16,3 +16,4 @@ d48cf8, 08302f, b5e582
 93c178, 465c8b, dfdce3
 ff7fa5, 54f10f, ffef00
 a864d2, 2aec87, ffe95a
+00FF66, 34007B, CFC8D9

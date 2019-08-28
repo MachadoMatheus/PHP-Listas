@@ -5,9 +5,9 @@
   font-family: 'Oswald', sans-serif;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  --backGround: #d9d9d9;
-  --coloridoFundoPadrao: #f9cf00;
-  --coloridoFundoEscuro: #4484ce;
+  --backGround: #CFC8D9;
+  --coloridoFundoPadrao: #00FF66;
+  --coloridoFundoEscuro: #34007B;
   --coloridoFundoClaro: #ffffff;
   color: var(--coloridoFundoEscuro);
 }

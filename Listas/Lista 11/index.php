@@ -1,6 +1,8 @@
 <?php 
 	include("desenho.php");
 	include("layouts.php");
+	$titulo = "Cookies2.0";
+	setcookie("paginaInicial", $_SERVER['PHP_SELF'], time()+3600);
 	function desenhar()
 		{
 			$largura = "24.85%";
@@ -73,7 +75,7 @@
 
 		$layout = new layout();
 
-		echo $layout->cabecalho("Cookies", null, "estiloIndex.css");
+		echo $layout->cabecalho($titulo, null, "estiloIndex.css");
 		echo $layout->barra();
 		echo $layout->corpo($conteudoEsquerda);
 		echo $layout->rodape();

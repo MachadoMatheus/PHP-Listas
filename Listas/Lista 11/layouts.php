@@ -5,10 +5,16 @@
 		{
 			$nomeProjeto = "Cookies 2.0";
 
+			if (basename($_SERVER['PHP_SELF'], ".php") == "index") {
+				$paginaInicial = "./";
+			} else {
+				$paginaInicial = "../";
+			}
+
 			if (is_Null($tituloPagina)) {
 				$tituloPagina = $nomeProjeto;
 			}
-			$cabecalho = "<!DOCTYPE html><html lang='pt-br'><head><title>$tituloPagina</title><link href='http://MachadoMatheus.github.io/favicon.ico' rel='shortcut icon' type='image/x-icon' /> <script type='text/javascript' src='http://livejs.com/live.js'></script>";
+			$cabecalho = "<!DOCTYPE html><html lang='pt-br'><head><title>$tituloPagina</title><link href='http://MachadoMatheus.github.io/favicon.ico' rel='shortcut icon' type='image/x-icon' />";
 
 
 			if (is_Null($caminhoEstilo)) {
@@ -25,9 +31,10 @@
 				<meta charset='utf-8'>
 			</head>
 			<body> 
-				<div class='cabecalho'>
-					<h1>$tituloCabecalho</h1>
-					</a>
+				<a href='$paginaInicial'>
+					<div class='cabecalho'>
+						<h1>$tituloCabecalho</h1>
+				</a>
 			</div>";
 
 			return $cabecalho;

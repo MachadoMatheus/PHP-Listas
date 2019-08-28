@@ -1,6 +1,7 @@
 <?php 
 		/*Crie um formulário de login para autenticação e mantenha os dados de login do usuário por meia hora, mesmo depois de o usuário ter fechado o navegador;*/
 		include("../layouts.php");
+		$conteudoDireita = null;
 
 		if (isset($_POST) && !empty($_POST)) {
 			$nomeLogin = $_POST['nome'];
@@ -19,7 +20,7 @@
 		} 
 
 		if (isset($nomeLogin) && isset($idadeLogin) && isset($senhaLogin)) {
-			$conteudoDireita[] = "Usuario Logado: $nomeLogin<br>Idade: $idadeLogin<br> Hash da senha: <div style='font-size:12px;'>$senhaLogin</div>";
+			$conteudoDireita[] = "<b>Usuário Logado:</b> $nomeLogin<br><b>Idade:</b> $idadeLogin<br> <b>Hash da senha:</b <br><div style='font-size:12px;'>$senhaLogin</div>";
 		}
 
 
@@ -28,7 +29,7 @@
 
 		$layout = new layout();
 
-		$conteudoEsquerda[] = "<form action='".$_SERVER["PHP_SELF"]."' method='POST'>
+		$conteudoEsquerda[] = "<h1>Login:</h1><form action='".$_SERVER["PHP_SELF"]."' method='POST'>
 		<label for='nome'><div class='textTitulo'>Nome</div></label>
 		<input type='text' name='nome' id='nome' placeholder='Ex.: Natália' required='required'>
 		<label for='idade'><div class='textTitulo'>Idade</div></label>

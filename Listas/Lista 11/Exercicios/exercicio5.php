@@ -6,9 +6,9 @@
 			$letra = $_POST['letra'];
 
 			if ($letra == 'a' || $letra == 'A' || $letra == 'e' || $letra == 'E' || $letra == 'i' || $letra == 'I' || $letra == 'o' || $letra == 'O' || $letra == 'u' || $letra == 'U') {
-				$conteudoDireita[] = $letra." é uma vogal";
+				$conteudoDireita[] = $letra." é uma vogal --> 1";
 			} else {
-				$conteudoDireita[] = $letra." não é uma vogal";
+				$conteudoDireita[] = $letra." é uma consoante --> 0";
 			}
 
 			
@@ -23,8 +23,8 @@
 		$layout = new layout();
 
 		$formulario = "<form action='".$_SERVER["PHP_SELF"]."' method='POST'>
-		<label for='letra'><div class='textTitulo'>Letra</div></label>
-		<input type='text' name='letra' id='letra' placeholder='Ex.: a' required='required'>
+		<label for='letra'><div class='textTitulo'>Digite uma letra</div></label>
+		<input type='text' name='letra' id='letra' maxlength='1' pattern='[a-zA-z]+' placeholder='Ex.: a' required='required'>
 		<input type='submit' value='Enviar'>
 		</form>";
 
