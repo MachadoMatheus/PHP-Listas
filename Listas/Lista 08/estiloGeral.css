@@ -55,7 +55,7 @@ button {
 	float                        : left;
 }
 
-button                       : hover {
+button                       :hover {
 	background-color             : var(--coloridoFundoPadrao);
 	color                        : var(--coloridoFundoClaro);
 	text-decoration              : underline;

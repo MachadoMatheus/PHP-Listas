@@ -1,1 +1,0 @@
-sudo ln -sf /opt/firefox-developer/firefox /usr/bin/firefox-developer
