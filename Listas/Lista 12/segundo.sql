@@ -24,8 +24,8 @@ CREATE TABLE medico (
 
 CREATE TABLE prontuario (
 	id_pront INT PRIMARY KEY AUTO_INCREMENT,
-	ocorrencia VARCHAR(255),
-	consulta VARCHAR(255),
+	ocorrencia VARCHAR(5),
+	consulta TEXT,
 	data_alteracao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	medicamento VARCHAR(255),
 	exames VARCHAR(255),
@@ -47,7 +47,25 @@ INSERT INTO paciente (id_cpf, nome, rg, endereco, telefone) VALUES ("29407235084
 INSERT INTO paciente (id_cpf, nome, rg, endereco, telefone) VALUES ("43129848088", "Felaroehoy", "241601204", "Rua Ângelo Luiz Monfardini", "91065528");
 INSERT INTO paciente (id_cpf, nome, rg, endereco, telefone) VALUES ("38358308051", "Dehiendîr", "490096189", "Rua Vitória", "74552183");
 
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("0000000000", "Frodo", "0000000000", "Rua Canário", "900000000", "Neurocirurgia", "0000000000");
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("1111111111", "Edmundo", "1111111111", "Rua dos Bobos", "911111111", "Dizer que é Virose", "111111111");
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("2222222222", "Pocahontas", "2222222222", "Avenida Rio Branco", "92222222", "Neurocirurgia", "222222222");
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("3333333333", "Barbie", "3333333333", "Rua Perto do Posto", "933333333", "Dizer que é Virose", "3333333333");
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("4444444444", "Cinderela", "4444444444", "Rua 7", "944444444", "Neurocirurgia", "4444444444");
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("5555555555", "Harry", "5555555555", "Rua 14", "55555555", "Dizer que é Virose", "5555555555");
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("6666666666", "Steve", "6666666666", "Rua 27", "66666666", "Homeopatia", "6666666666");
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("7777777777", "Peter", "7777777777", "Rua Martha Medeiros", "77777777", "Neurocirurgia", "7777777777");
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("8888888888", "Bela", "8888888888", "Rua do Big", "88888888", "Neurocirurgia", "8888888888");
+INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf) VALUES ("9999999999", "Natasha", "9999999999", "Rua Aqui Perto", "999999999", "Homeopatia", "9999999999");
 
-INSERT INTO medico (id_crm, nome, rg, endereco, telefone, especialidade, cpf)
 
-INSERT INTO paciente (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico)
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("a", "Tossiu bastante", "Xarope", "Tudo em ordem", "92517771014", "0000000000");
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("b", "Tossiu bastante", "Dormir", "Tudo em ordem", "12656383064", "5555555555");
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("c", "Tossiu bastante", "Xarope", "Tudo em ordem", "53723680046", "0000000000");
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("b", "Tossiu bastante", "Água Diluída em Água", "Quase Morto", "01671022068", "9999999999");
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("b", "Tossiu bastante", "Xarope", "Tudo em ordem", "37531183030", "2222222222");
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("c", "Tossiu bastante", "Paracetamol", "Tudo em ordem", "30970588003", "3333333333");
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("b", "Tossiu bastante", "Paracetamol", "Tudo em ordem", "86205067064", "2222222222");
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("a", "Tossiu bastante", "Cheiro Verde", "Tudo em ordem", "29407235084", "6666666666");
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("d", "Tossiu bastante", "Xarope", "Tudo em ordem", "38358308051", "7777777777");
+INSERT INTO prontuario (ocorrencia, consulta, medicamento, exames, id_paciente, id_medico) VALUES ("a", "Tossiu bastante", "Xarope", "Tudo em ordem", "43129848088", "1111111111");

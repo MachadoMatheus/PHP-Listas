@@ -58,7 +58,7 @@ CREATE TABLE instrumento (
 CREATE TABLE sinfonia (
 	id_sinfonia INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	compositor VARCHAR(255),
-	data_criacaocao DATE,
+	data_criacao DATE,
 	nome VARCHAR(255),
 	id_orquestra INT,
 	id_instumento INT,
@@ -66,3 +66,38 @@ CREATE TABLE sinfonia (
 	FOREIGN KEY (id_instumento) REFERENCES instrumento(id_instumento),
 	FOREIGN KEY (id_orquestra) REFERENCES orquestra(id_orquestra)
 );
+
+INSERT INTO pais (nome) VALUES ("Brasil");
+INSERT INTO pais (nome) VALUES ("Jamaica");
+INSERT INTO pais (nome) VALUES ("Holanda");
+INSERT INTO pais (nome) VALUES ("Austrália");
+INSERT INTO pais (nome) VALUES ("Alemanha");
+INSERT INTO pais (nome) VALUES ("Rússia");
+INSERT INTO pais (nome) VALUES ("Peru");
+INSERT INTO pais (nome) VALUES ("Argentina");
+INSERT INTO pais (nome) VALUES ("Áustria");
+INSERT INTO pais (nome) VALUES ("Chile");
+
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Rio Grande do Sul", "RS", 0);
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Bahia", "BA", 0);
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Rio Grande do Sul", "RS", 6);
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Rio Grande do Sul", "RS", 6);
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Rio Grande do Sul", "RS", 7);
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Rio Grande do Sul", "RS", 2);
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Rio Grande do Sul", "RS", 5);
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Rio Grande do Sul", "RS", 3);
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Rio Grande do Sul", "RS", 3);
+INSERT INTO estado (nome, sigla, id_pais) VALUES ("Rio Grande do Sul", "RS", 4);
+
+INSERT INTO cidade (nome, id_estado) VALUES ("Santa Maria", 0);
+INSERT INTO cidade (nome, id_estado) VALUES ("Salvador", 0);
+INSERT INTO cidade (nome, id_estado) VALUES ("Quito", 6);
+INSERT INTO cidade (nome, id_estado) VALUES ("Machu Pichu", 6);
+INSERT INTO cidade (nome, id_estado) VALUES ("Buenos Aires", 7);
+INSERT INTO cidade (nome, id_estado) VALUES ("Amsterdã", 2);
+INSERT INTO cidade (nome, id_estado) VALUES ("Moscow", 5);
+INSERT INTO cidade (nome, id_estado) VALUES ("Camberra", 3);
+INSERT INTO cidade (nome, id_estado) VALUES ("Sidney", 3);
+INSERT INTO cidade (nome, id_estado) VALUES ("Berlim", 4);
+
+INSERT INTO cidade (data_criacao, nome, id_cidade) VALUES (, 0);
