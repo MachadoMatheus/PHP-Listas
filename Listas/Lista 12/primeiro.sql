@@ -12,13 +12,15 @@ CREATE TABLE login (
 	senha VARCHAR(255)
 );
 
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Natália", "Pires", "natalinha", "272727");
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Matheus", "Machado", "teteus", "121212");
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Natália", "Galáxia", "galaxia", "271227");
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Natália", "Bolinha", "bolinha", "141427");
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Natheus", "Netuno", "netuno", "141414");
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Beluga", ", o Curto", "beluga", "727272");
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Jubarte", ", o Breve", "jubarte", "jjjjjj");
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Orca", ", a Só", "orca", "oooooo");
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Cachalote", ", a Grande", "charlote", "cacaca");
-INSERT INTO login (primeiro_nome, ultimo_nome, login, senha) VALUES ("Franca", ", a Fraca", "franca", "frfrfr");
+INSERT INTO login 
+(primeiro_nome, ultimo_nome	  , id_login  	, senha) VALUES 
+("Natália"   , "Pires"   	  , "natalinha" , "272727"),
+("Matheus"   , "Machado" 	  , "teteus"    , "121212"),
+("Natália"   , "Galáxia" 	  , "galaxia"   , "271227"),
+("Natália"   , "Bolinha" 	  , "bolinha"   , "141427"),
+("Natheus"   , "Netuno"  	  , "netuno"    , "141414"),
+("Beluga"    , ", o Curto"    , "beluga"   	, "727272"),
+("Jubarte"   , ", o Breve"    , "jubarte"  	, "jjjjjj"),
+("Orca"      , ", a Só"       , "orca"     	, "oooooo"),
+("Cachalote" , ", a Grande"   , "charlote" 	, "cacaca"),
+("Franca"    , ", a Fraca"    , "franca"   	, "frfrfr");
